@@ -1,0 +1,38 @@
+body{
+    margin: 3%;
+    background-image: url(../pics/ADN.jpg);
+    background-size: cover;
+}
+
+.middle{
+    margin: 10% 0;
+}
+
+.medecin{
+    background-image: url(../pics/Medecin.jpg);
+}
+
+.OTP{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 4% auto;
+    text-align: center;
+}
+
+.OTP h2{
+    margin: 0 auto;
+}
+
+.WB{
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    text-align: end;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}

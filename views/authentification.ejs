@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div>
+        <h1 class="d-flex justify-content-center WB">Bienvenue</h1>
+
+        <% if(message){ %>
+            <div><%-message-%></div>
+        <%}%>
+
+        <div class="middle">
+            <div>
+                <!-- <img src="/public/pics/Medecin.jpg" alt=""> -->
+                <div class="OTP">
+                    <h2 class="d-flex justify-content-right WB">OTP</h2>
+                    <div><%- img -%></div>
+                </div>
+                <!-- <div class="medecin"></div> -->
+            </div>
+            <div class="d-flex justify-content-center" style="margin-top: 2em;">
+                <form class="d-flex" action="login" method="POST">
+                    <div class="col">
+                        <input class="form-control" type="text" id="nom" name="nom" placeholder="Votre mot de passe">
+                    </div>
+    
+                    <div class="col">
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Votre mot de passe">
+                    </div>
+    
+                    <div class="col justify-content-center">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>Contact : nicolas.perez2@epsi.fr</footer>
+</html>

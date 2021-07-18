@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div>
+        <h1 class="d-flex justify-content-center">Zone de saisie d'autorisation d'accès depuuis un autre navigateur</h1>
+
+        <div class="d-flex justify-content-center" style="margin-top: 2em;">
+            <form action="valide" method="POST">
+                <div class="col">
+                    <input class="form-control" type="text" id="code" name="code" placeholder="Le code reçu par mail">
+                </div>
+
+                <div class="col">
+                    <input class="form-control" type="texte" id="mail" name="mail" placeholder="mail">
+                </div>
+
+                <div class="col justify-content-center">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

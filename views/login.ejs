@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <h2>Espace Personnel</h2>
+
+  <p>Bon retour parmis nous. Vous pouvez dès à présent utiliser le portail pour accéder à vos différents dossiers.</p>
+
+  <% if(corrompu){ %>
+    <div class="alert alert-danger" role="alert">
+      Contacter l'administrateur afin de changer votre mot de passe. Votre mot de passe est compromi d'après les résultats de recherche.
+    </div>
+    <% } else{ %>  
+      <div class="alert alert-success" role="alert">
+        Votre compte est protéger.
+      </div>
+  <% } %>
+
+  <button class="btn btn-outline-info" onclick="redirect()">Déconnexion</button>
+
+  <script>
+    function redirect(){
+      path = window.location.href + "/../logout";
+      window.location.assign(path); 
+    }
+    </script>
+</body>
+</html>

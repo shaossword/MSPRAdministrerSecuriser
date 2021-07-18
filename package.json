@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "@authentication/google-authenticator": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "deasync": "^0.1.21",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "https": "^1.0.0",
+    "jsdom": "^16.6.0",
+    "ldapjs": "^2.3.0",
+    "mariadb": "^2.5.4",
+    "mysql": "^2.18.1",
+    "nexmo": "^2.9.1",
+    "nodebootstrap": "^4.5.0",
+    "nodemailer": "^6.6.2",
+    "nunjucks": "^3.2.3",
+    "qrcode": "^1.4.4",
+    "speakeasy": "^2.0.0",
+    "useragent": "^2.3.0"
+  },
+  "name": "mspr-secu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
